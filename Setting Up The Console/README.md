@@ -14,4 +14,5 @@
 7. Устанавливаем `zsh`, на последних версиях макоси это делать не обязательно. Чтоб проверить можно выполнить команду `echo $SHELL`, если там будет какой-нибудь `/bin/zsh`, то можно пропускать, иначе `brew install zsh`.
 8. Устанавливаем менеджер дополнений `oh-my-zsh` для `zsh`: идем на https://github.com/ohmyzsh/ohmyzsh и выполняем `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
 9. Устанавливаем тему `spaceship`: `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"` и `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"`.
-10. Перезапускаем `iTerm 2` и наслаждаемся прекрасным
+10. Редактируем `zsh` - выбираем тему `spaceship`: `subl ~/.zshrc`, там находим переменну `ZSH_THEME` и меняем ее значение на `spaceship`.
+11. Перезапускаем `iTerm 2` и наслаждаемся прекрасным
